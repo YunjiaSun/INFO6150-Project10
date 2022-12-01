@@ -1,38 +1,106 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #E9E0D1;
+  height: 100vh;
+  width: 100vw;
+}
+
+.navbar{
+  background: #A85163;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+button{
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  font-size: 15px;
+  margin-left: 15px;
+  margin-right: 20px;
+  color: #5C5863;
+  font-weight: bold;
+}
+
+.home-contents{
+  display: block;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home-contents .title{
+  color: #3b1324;
+  margin-top: 80px;
+  font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.home-contents .slogan{
+  text-align: center;
+  font-size: 20px;
+}
+
+.home-contents .photo{
+  margin-top: 30px;
+  height: 350px;
+  width: 1100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .home-contents .photo {
+    margin-top: 40px;
+    height: 350px;
+    width: 800px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 800px) {
+  .home-contents .title{
+    font-size: 40px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .home-contents .slogan{
+    text-align: center;
+    font-size: 18px;
+  }
+  .home-contents .photo{
+    margin-top: 40px;
+    height: 350px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home-contents .title{
+    font-size: 30px;
+  }
+
+  .home-contents .slogan{
+    text-align: center;
+    font-size: 15px;
+  }
+  .home-contents .photo{
+    margin-top: 40px;
+    height: 350px;
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home-contents .title{
+    font-size: 30px;
+  }
+
+  .home-contents .slogan{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 15px;
+  }
+  .home-contents .photo{
+    margin-top: 40px;
+    height: 300px;
+    width: 400px;
   }
 }

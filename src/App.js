@@ -1,25 +1,33 @@
-import logo from './logo.svg';
+import Wand from "./Components/Wand";
+import Home from "./Components/Home";
 import './App.css';
+import {useState} from "react";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const [page, setPage] = useState("Home")
+
+    const pageHelper = (event,page) => {
+        setPage(page);
+        // console.log("hello")
+    }
+
+    return (
+        <>
+            <div className="navbar">
+                <button onClick={(e) => pageHelper(e,"Home")}>Home</button>
+                <button onClick={(e) => pageHelper(e,"Wand")}>Wand</button>
+            </div>
+
+            <div className="App">
+                {(page === "Home") && <Home />}
+                {(page === "Wand") && <Wand />}
+            </div>
+
+        </>
+
+    );
 }
 
 export default App;
