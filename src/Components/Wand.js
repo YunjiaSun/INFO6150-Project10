@@ -23,8 +23,8 @@ const Wand =() => {
     }
 
     const handleSubmit = (event) => {
-        console.log(event.target.value);
-        setID(event.target.value);
+        // console.log(event.target[0].value);
+        setID(event.target[0].value);
         event.preventDefault();
     }
 
@@ -52,15 +52,13 @@ const Wand =() => {
                         <h4>🧙‍♀ ️Master: {master}</h4>
                     </div>
                 </div>
-
                 <div className="search">
                     <form className="form" onSubmit={(event) => handleSubmit(event)}>
                         <input type="number" className="searchInput"
                                placeholder="Please input a number from 1- 87"
-                               onSubmit={(event)=> handleSubmit()} />
+                        />
                     </form>
                 </div>
-
                 <div className="threeButtons">
                     <button onClick={() => wandID > 1 ? setID(wandID - 1) : wandID = 1}> Previous One </button>
                     <button onClick={restHelper}> Reset </button>
