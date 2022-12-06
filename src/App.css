@@ -8,14 +8,6 @@ body{
   width: 100vw;
 }
 
-.navbar{
-  background: #A85163;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: right;
-}
-
 button{
   border-radius: 10px;
   border: 4px double #cccccc;

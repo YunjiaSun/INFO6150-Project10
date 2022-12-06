@@ -15,7 +15,6 @@ const Home =() =>{
                 to welcome you home." </h3>
             <img className="photo" src={img}/>
         </div>
-
     )
 }
 

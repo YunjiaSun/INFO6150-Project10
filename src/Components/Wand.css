@@ -41,6 +41,11 @@
     height: 30px;
     background: #f3ead9;
     border-radius: 9999em;
+    text-align: center;
+}
+
+.container .threeButtons{
+    margin-top: 30px;
 }
 
 @media only screen and (max-width: 800px){
