@@ -1,5 +1,5 @@
 import React, {useEffect,useState} from "react";
-import "./Wand.css"
+import "./CSS/Wand.css"
 
 
 const Wand =() => {
